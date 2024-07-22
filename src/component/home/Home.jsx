@@ -20,11 +20,12 @@ const Home = () => {
     }
     
 
+    //  this is create function
     const add_the_data = () =>
     {
         
 
-        setid(id+1)  //
+        setid(id+1)  // this is prev arrugument he know every thing about update
         setAllData((pres) =>
         {
             return [...pres, {data:takeInput,id:id}]; //...press mean jo v prev mean jo state ha
@@ -42,6 +43,16 @@ const Home = () => {
 
     const deletes = (d,data) =>
     {
+    
+        // "1"=>1
+        //"0"=>0
+
+        [{ data: "apple", id: "0" },
+            {data:"banana",id:"1"}
+        ]
+        [{name:"apple",id:"0"}]
+    // d= event
+        // data mean id
         let demo = [];
         for (let i of allData)
         {
@@ -59,7 +70,7 @@ const Home = () => {
     }
 
     const update = (e,data) => {
-        
+        //    0 demo may
         let pro = prompt("please enter your value");
         let demo = allData;
         for (let i of demo)
@@ -77,7 +88,8 @@ const Home = () => {
     useEffect(() =>
     {
 
-    },[])
+    }, [])
+    console.log("hiuii")
   return (
     
       <div className={hmcs.home_main_container}>
