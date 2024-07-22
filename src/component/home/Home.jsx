@@ -42,7 +42,6 @@ const Home = () => {
 
     const deletes = (d,data) =>
     {
-        
         let demo = [];
         for (let i of allData)
         {
